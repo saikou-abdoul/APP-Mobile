@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "projecttext",
-    "slug": "projecttext",
+    "slug": "firebase",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,17 +13,113 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "plugins": [
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+            "recordAudioAndroid": true
+          }
+        ],
+        [
+          "@rnmapbox/maps",
+          {
+            "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibWRpYW5tYXJleWFoIiwiYSI6ImNtZGhwZWdjaTA0NjQya3BrZnFtZ2E5YmwifQ.1j2l-TTRm6bfn4Y79c9JEw"
+          }
+        ],
+        [
+          "expo-location",
+          {
+            "locationWhenInUsePermission": "Show current location on map."
+          }
+        ],
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+            "recordAudioAndroid": true
+          }
+        ],
+        [
+          "@rnmapbox/maps",
+          {
+            "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibWRpYW5tYXJleWFoIiwiYSI6ImNtZGhwZWdjaTA0NjQya3BrZnFtZ2E5YmwifQ.1j2l-TTRm6bfn4Y79c9JEw"
+          }
+        ],
+        [
+          "expo-location",
+          {
+            "locationWhenInUsePermission": "Show current location on map."
+          }
+        ],
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+            "recordAudioAndroid": true
+          }
+        ],
+        [
+          "@rnmapbox/maps",
+          {
+            "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibWRpYW5tYXJleWFoIiwiYSI6ImNtZGhwZWdjaTA0NjQya3BrZnFtZ2E5YmwifQ.1j2l-TTRm6bfn4Y79c9JEw"
+          }
+        ],
+        [
+          "expo-location",
+          {
+            "locationWhenInUsePermission": "Show current location on map."
+          }
+        ],
+        [
+          "expo-camera",
+          {
+            "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+            "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+            "recordAudioAndroid": true
+          }
+        ],
+        [
+          "@rnmapbox/maps",
+          {
+            "RNMapboxMapsDownloadToken": "sk.eyJ1IjoibWRpYW5tYXJleWFoIiwiYSI6ImNtZGhwZWdjaTA0NjQya3BrZnFtZ2E5YmwifQ.1j2l-TTRm6bfn4Y79c9JEw"
+          }
+        ],
+        [
+          "expo-location",
+          {
+            "locationWhenInUsePermission": "Show current location on map."
+          }
+        ]
+      ],
+      "package": "com.anonymous.projecttext",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d7b400d4-85ba-4d09-a114-f28cabbd00bc"
+      }
+    },
+    "owner": "mdianmareyah",
+    "updates": {
+      "url": "https://u.expo.dev/20f0d6c1-9932-4728-9db1-d5c58b615df1"
     }
   }
 }
